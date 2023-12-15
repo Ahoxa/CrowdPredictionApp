@@ -87,5 +87,5 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl font-medium;
+  @apply text-3xl;
 }

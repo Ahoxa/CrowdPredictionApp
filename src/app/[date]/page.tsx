@@ -14,7 +14,7 @@ const Detail: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1>{formattedDate}</h1>
+      <p className="text-3xl">{formattedDate}</p>
       <RoomNumForm />
     </div>
   );
