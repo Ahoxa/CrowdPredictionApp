@@ -4,12 +4,8 @@ import Calendar from '../components/Calendar';
 
 function page() {
   return (
-    <div className="container items-center">
-      <div className="flex flex-wrap justify-center">
-        <div className="w-full px-4 mt-10">
-          <Calendar/>
-        </div>
-      </div>
+    <div className="container mt-5">
+      <Calendar/>
     </div>
   );
 }

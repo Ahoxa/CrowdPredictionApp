@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ClipboardEdit, Languages } from "lucide-react";
+import { Utensils } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -11,12 +11,13 @@ import {
 
 export default function Navbar() {
   return (
-    <div className="container py-2 flex items-center bg-orange-100">
-      <Link href={"/"} className="flex gap-2 item-center">
-        <ClipboardEdit />
-        <p className="text-sm font-medium md:block">混雑予測ボード</p>
+    <div className="flex justify-center relative py-5 bg-orange-100">
+      <Link href={"/"} className="flex gap-2 items-center">
+        <Utensils />
+        <p className="text-lg font-medium">Breakfast Time Sharing</p>
+        <Utensils/>
       </Link>
-      <div className="ml-auto">
+      <div className="absolute right-5">
         <Select>
           <SelectTrigger className="mr-[2px]">
             <SelectValue placeholder="日本語" />
