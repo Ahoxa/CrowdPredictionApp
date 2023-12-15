@@ -14,11 +14,11 @@ const Detail: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1>In order to share tommorow's breakfast crowd,</h1>
-      <h1>
+      <h2>In order to share tommorow's breakfast crowd,</h2>
+      <h2>
         We would appreciate your cooporation in selecting and registering the
         time you plan to visit the restaurant.
-      </h1>
+      </h2>
       <h1>{formattedDate}</h1>
       <RoomNumForm />
     </div>

@@ -31,7 +31,7 @@ const RoomNumForm = () => {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
         <FormItem>
-          <FormLabel htmlFor="roomNumber" className="mr-5">Room Number</FormLabel>
+          <FormLabel htmlFor="roomNumber" className="mr-5 text-3xl">Room Number</FormLabel>
           <FormField
             control={form.control}
             name="roomNumber"
@@ -41,6 +41,7 @@ const RoomNumForm = () => {
                 type="string"
                 id="roomNumber"
                 placeholder="123"
+                className="border-2 border-gray-300 rounded-md w-20 h-10 text-center text-3xl"
               />
             )}
           />

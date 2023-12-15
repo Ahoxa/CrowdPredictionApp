@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className="flex justify-center relative py-5 bg-orange-100">
       <Link href={"/"} className="flex gap-2 items-center">
         <Utensils />
-        <p className="text-lg font-medium">Breakfast Time Sharing</p>
+        <h1>Breakfast Time Sharing</h1>
         <Utensils/>
       </Link>
       <div className="absolute right-5">
