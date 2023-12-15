@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Alegreya } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Instructions from "@/components/Instructions";
 
 const alegreya = Alegreya({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={alegreya.className}>
         <Navbar />
+        <Instructions />
         {children}
       </body>
     </html>
