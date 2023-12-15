@@ -1,13 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Utensils } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import LangSelector from "./LangSelector";
 
 export default function Navbar() {
   return (
@@ -18,15 +12,7 @@ export default function Navbar() {
         <Utensils/>
       </Link>
       <div className="absolute right-5">
-        <Select>
-          <SelectTrigger className="mr-[2px]">
-            <SelectValue placeholder="日本語" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="ja">日本語</SelectItem>
-            <SelectItem value="en">English</SelectItem>
-          </SelectContent>
-        </Select>
+        <LangSelector />
       </div>
     </div>
   );
