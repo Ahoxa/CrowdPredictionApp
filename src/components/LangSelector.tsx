@@ -9,15 +9,21 @@ import {
 
 function LangSelector() {
   return (
-    <Select>
-      <SelectTrigger className="mr-[2px]">
-        <SelectValue placeholder="日本語" />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectItem value="ja">日本語</SelectItem>
-        <SelectItem value="en">English</SelectItem>
-      </SelectContent>
-    </Select>
+    <div className="flex justify-end mt-2 mr-5 md:text-3xl">
+      <div className="inline-block ">
+        <Select>
+          <SelectTrigger className="md:text-xl">
+            <SelectValue placeholder="English" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="en" className="md:text-xl">
+              English
+            </SelectItem>
+            <SelectItem value="ja">日本語</SelectItem>
+          </SelectContent>
+        </Select>
+      </div>
+    </div>
   );
 }
 

@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import { useRouter } from "next/navigation";
 
-const Calender: React.FC = () => {
+const Calender = () => {
   const router = useRouter();
 
   const handleDateClick = (arg: any) => {
@@ -18,6 +17,7 @@ const Calender: React.FC = () => {
     <FullCalendar
       plugins={[dayGridPlugin, interactionPlugin]}
       initialView="dayGridMonth"
+      contentHeight={'auto'}
       dateClick={handleDateClick}
     />
   );

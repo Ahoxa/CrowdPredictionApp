@@ -1,11 +1,10 @@
-"use client";
 import React from "react";
-import Calendar from '../components/Calendar';
+import Calendar from "../components/Calendar";
 
 function page() {
   return (
-    <div className="container mt-5">
-      <Calendar/>
+    <div className="justify-center items-center md:w-2/3 my-5 mx-5 md:mx-auto">
+      <Calendar />
     </div>
   );
 }

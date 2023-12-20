@@ -2,7 +2,7 @@ import React from "react";
 
 function Instructions() {
   return (
-    <div className="container mt-5 text-center">
+    <div className="container mt-3 text-center">
       <h2>In order to share tommorow's breakfast crowd,</h2>
       <h2>
         We would appreciate your cooporation in selecting and registering the 
