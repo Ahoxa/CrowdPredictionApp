@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import {
   Select,
   SelectContent,
@@ -6,6 +7,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
+import { useLanguage } from "@/hooks/LanguageContext";
 
 const languages = [
   { value: "en", label: "English" },
@@ -18,15 +21,21 @@ const languages = [
   { value: "zh", label: "中文" },
   { value: "ja", label: "日本語" },
   { value: "ko", label: "한국어" },
-  { value: 'in', label: 'Bahasa Indonesia' },
+  { value: "in", label: "Bahasa Indonesia" },
 ];
 
 function LangSelector() {
+  const {language, setLanguage} = useLanguage();
+
+  const handleLanguageChange = (e: string) => {
+    setLanguage(e);
+  };
+
   return (
     <div className="flex justify-end mt-2 mr-5 md:text-3xl">
       <div className="inline-block">
-        <Select>
-          <SelectTrigger className="md:text-xl">
+        <Select onValueChange={handleLanguageChange} defaultValue={language}>
+          <SelectTrigger className="text-md md:text-xl">
             <SelectValue placeholder="English" />
           </SelectTrigger>
           <SelectContent>

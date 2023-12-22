@@ -1,0 +1,277 @@
+{
+  "en": {
+    "instruction": {
+      "p1": "In order to share breakfast crowd, we need to know how many people are coming.",
+      "p2": "We would appreciate your cooporation in selecting and registering your room number, the number of people and the time you plan to visit the restaurant.",
+      "attention": "※ This is not a reservation system ※"
+    },
+    "formItem": {
+      "roomNum": "Room Number",
+      "numOfPeople": "Number of People",
+      "time": "Visiting Time"
+    },
+    "congestion": "Congestion Prediction",
+    "confirm": {
+      "title": "Your Input",
+      "message": "Below is the information you have entered. Is this correct?"
+    },
+    "toast": {
+      "title": "Submitted!",
+      "description": "Your information has been submitted."
+    },
+    "button": {
+      "submit": "Submit",
+      "save": "Save Changes"
+    }
+  },
+  "fr": {
+    "instruction": {
+      "p1": "Afin de partager la foule du petit-déjeuner, nous devons savoir combien de personnes viennent.",
+      "p2": "Nous vous remercions de votre coopération en sélectionnant et en enregistrant votre numéro de chambre, le nombre de personnes et l'heure à laquelle vous prévoyez de visiter le restaurant.",
+      "attention": "※ Ce n'est pas un système de réservation ※"
+    },
+    "formItem": {
+      "roomNum": "Numéro de chambre",
+      "numOfPeople": "Nombre de personnes",
+      "time": "Heure de visite"
+    },
+    "congestion": "Prédiction de la congestion",
+    "confirm": {
+      "title": "Votre entrée",
+      "message": "Voici les informations que vous avez saisies. Est-ce correct?"
+    },
+    "toast": {
+      "title": "Soumis!",
+      "description": "Vos informations ont été soumises."
+    },
+    "button": {
+      "submit": "Soumettre",
+      "save": "Enregistrer les modifications"
+    }
+  },
+  "de": {
+    "instruction": {
+      "p1": "Um das Frühstück zu teilen, müssen wir wissen, wie viele Personen kommen.",
+      "p2": "Wir würden uns freuen, wenn Sie Ihre Zimmernummer, die Anzahl der Personen und die Zeit, zu der Sie das Restaurant besuchen möchten, auswählen und registrieren würden.",
+      "attention": "※ Dies ist kein Reservierungssystem ※"
+    },
+    "formItem": {
+      "roomNum": "Zimmernummer",
+      "numOfPeople": "Anzahl der Personen",
+      "time": "Besuchszeit"
+    },
+    "congestion": "Stauvorhersage",
+    "confirm": {
+      "title": "Ihre Eingabe",
+      "message": "Unten finden Sie die von Ihnen eingegebenen Informationen. Ist das richtig?"
+    },
+    "toast": {
+      "title": "Eingereicht!",
+      "description": "Ihre Informationen wurden eingereicht."
+    },
+    "button": {
+      "submit": "einreichen",
+      "save": "Änderungen speichern"
+    }
+  },
+  "es": {
+    "instruction": {
+      "p1": "Para compartir el desayuno, necesitamos saber cuántas personas vienen.",
+      "p2": "Agradeceríamos su cooperación al seleccionar y registrar su número de habitación, la cantidad de personas y la hora a la que planea visitar el restaurante.",
+      "attention": "※ Este no es un sistema de reservas ※"
+    },
+    "formItem": {
+      "roomNum": "Número de habitación",
+      "numOfPeople": "Número de personas",
+      "time": "Hora de visita"
+    },
+    "congestion": "Predicción de congestión",
+    "confirm": {
+      "title": "Su entrada",
+      "message": "A continuación se muestran los datos que ha ingresado. ¿Es esto correcto?"
+    },
+    "toast": {
+      "title": "¡Enviado!",
+      "description": "Su información ha sido enviada."
+    },
+    "button": {
+      "submit": "Enviar",
+      "save": "Guardar cambios"
+    }
+  },
+  "it": {
+    "instruction": {
+      "p1": "Per condividere la folla della colazione, dobbiamo sapere quante persone vengono.",
+      "p2": "Apprezzeremmo la vostra cooperazione nella selezione e registrazione del numero di camera, il numero di persone e l'ora in cui prevedete di visitare il ristorante.",
+      "attention": "※ Questo non è un sistema di prenotazione ※"
+    },
+    "formItem": {
+      "roomNum": "Numero di camera",
+      "numOfPeople": "Numero di persone",
+      "time": "Orario di visita"
+    },
+    "congestion": "Previsione della congestione",
+    "confirm": {
+      "title": "La tua voce",
+      "message": "Di seguito sono riportate le informazioni che hai inserito. È corretto?"
+    },
+    "toast": {
+      "title": "Inviato!",
+      "description": "Le tue informazioni sono state inviate."
+    },
+    "button": {
+      "submit": "Invia",
+      "save": "Salva modifiche"
+    }
+  },
+  "pt": {
+    "instruction": {
+      "p1": "Para compartilhar a multidão do café da manhã, precisamos saber quantas pessoas estão vindo.",
+      "p2": "Agradeceríamos sua cooperação na seleção e registro do número do seu quarto, o número de pessoas e a hora em que planeja visitar o restaurante.",
+      "attention": "※ Este não é um sistema de reserva ※"
+    },
+    "formItem": {
+      "roomNum": "Número do quarto",
+      "numOfPeople": "Número de pessoas",
+      "time": "Hora da visita"
+    },
+    "congestion": "Previsão de congestionamento",
+    "confirm": {
+      "title": "Sua entrada",
+      "message": "Abaixo estão as informações que você inseriu. Isso está correto?"
+    },
+    "toast": {
+      "title": "Enviado!",
+      "description": "Suas informações foram enviadas."
+    },
+    "button": {
+      "submit": "Enviar",
+      "save": "Salvar alterações"
+    }
+  },
+  "ru": {
+    "instruction": {
+      "p1": "Чтобы поделиться завтраком, нам нужно знать, сколько людей приходит.",
+      "p2": "Мы будем признательны за ваше сотрудничество в выборе и регистрации номера вашей комнаты, количества людей и времени, когда вы планируете посетить ресторан.",
+      "attention": "※ Это не система бронирования ※"
+    },
+    "formItem": {
+      "roomNum": "Номер комнаты",
+      "numOfPeople": "Количество людей",
+      "time": "Время посещения"
+    },
+    "congestion": "Прогнозирование заторов",
+    "confirm": {
+      "title": "Ваш ввод",
+      "message": "Ниже приведена информация, которую вы ввели. Это правильно?"
+    },
+    "toast": {
+      "title": "Отправлено!",
+      "description": "Ваша информация была отправлена."
+    },
+    "button": {
+      "submit": "Отправить",
+      "save": "Сохранить изменения"
+    }
+  },
+  "zh": {
+    "instruction": {
+      "p1": "为了分享早餐人群，我们需要知道有多少人来。",
+      "p2": "我们将感谢您在选择和注册您的房间号，人数和计划访问餐厅的时间时的合作。",
+      "attention": "※ 这不是预订系统 ※"
+    },
+    "formItem": {
+      "roomNum": "房间号",
+      "numOfPeople": "人数",
+      "time": "访问时间"
+    },
+    "congestion": "拥挤预测",
+    "confirm": {
+      "title": "您的输入",
+      "message": "以下是您输入的信息。这正确吗？"
+    },
+    "toast": {
+      "title": "已提交！",
+      "description": "您的信息已提交。"
+    },
+    "button": {
+      "submit": "提交",
+      "save": "保存更改"
+    }
+  },
+  "ja": {
+    "instruction": {
+      "p1": "朝食の混雑状況をスタッフおよび皆様で共有するため、",
+      "p2": "お客様のお部屋番号、人数、朝食の予定時間帯を登録して頂きますようご協力をお願い申し上げます。",
+      "attention": "※ 当レストランは予約制ではございません。 ※"
+    },
+    "formItem": {
+      "roomNum": "お部屋番号",
+      "numOfPeople": "人数",
+      "time": "朝食の予定時間帯"
+    },
+    "congestion": "混雑予測",
+    "confirm": {
+      "title": "入力内容",
+      "message": "以下の内容でよろしいですか？"
+    },
+    "toast": {
+      "title": "送信完了",
+      "description": "情報を送信しました。"
+    },
+    "button": {
+      "submit": "送信",
+      "save": "変更を保存"
+    }
+  },
+  "ko": {
+    "instruction": {
+      "p1": "아침 식사 인원을 파악하기 위해 방문 예정인 인원을 파악하고 있습니다.",
+      "p2": "방 번호, 인원, 방문 예정 시간을 선택하여 등록해 주시기 바랍니다.",
+      "attention": "※ 예약 시스템이 아닙니다 ※"
+    },
+    "formItem": {
+      "roomNum": "방 번호",
+      "numOfPeople": "인원",
+      "time": "방문 예정 시간"
+    },
+    "congestion": "혼잡 예측",
+    "confirm": {
+      "title": "입력 내용",
+      "message": "아래 내용이 맞습니까?"
+    },
+    "toast": {
+      "title": "제출 완료",
+      "description": "정보를 제출했습니다."
+    },
+    "button": {
+      "submit": "제출",
+      "save": "변경 사항 저장"
+    }
+  },
+  "in": {
+    "instruction": {
+      "p1": "Untuk berbagi kerumunan sarapan, kami perlu tahu berapa banyak orang yang datang.",
+      "p2": "Kami akan menghargai kerjasama Anda dalam memilih dan mendaftarkan nomor kamar Anda, jumlah orang dan waktu Anda berencana mengunjungi restoran.",
+      "attention": "※ Ini bukan sistem reservasi ※"
+    },
+    "formItem": {
+      "roomNum": "Nomor kamar",
+      "numOfPeople": "Jumlah orang",
+      "time": "Waktu kunjungan"
+    },
+    "congestion": "Prediksi Kemacetan",
+    "confirm": {
+      "title": "Masukan Anda",
+      "message": "Berikut adalah informasi yang Anda masukkan. Apakah ini benar?"
+    },
+    "toast": {
+      "title": "Dikirim!",
+      "description": "Informasi Anda telah dikirim."
+    },
+    "button": {
+      "submit": "Kirim",
+      "save": "Simpan perubahan"
+    }
+  }
+}

@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 
+import { useLanguage } from "@/hooks/LanguageContext";
+import translations from "@/lib/translations.json";
+import { Translations } from "@/lib/types";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -48,6 +52,14 @@ const schema = z.object({
 });
 
 export default function DataForm() {
+  const { language } = useLanguage();
+
+  const t = translations as Translations;
+  let formItem = t[language].formItem;
+  let confirm = t[language].confirm;
+  let toastMessage = t[language].toast;
+  let buttonText = t[language].button;
+
   const form = useForm<z.infer<typeof schema>>({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -77,8 +89,8 @@ export default function DataForm() {
     console.log({ roomNumber, numberOfPeople, time });
     setIsDialogOpen(false);
     toast({
-      title: "Submitted!",
-      description: "Your information has been submitted.",
+      title: toastMessage.title,
+      description: toastMessage.description,
     });
   };
 
@@ -97,7 +109,7 @@ export default function DataForm() {
                       htmlFor="roomNumber"
                       className="mr-5 text-xl md:text-3xl whitespace-nowrap"
                     >
-                      Room Number
+                      {formItem.roomNum}
                     </FormLabel>
                     <FormControl>
                       <Input
@@ -125,7 +137,7 @@ export default function DataForm() {
                       htmlFor="numberOfPeople"
                       className="mr-5 text-xl md:text-3xl whitespace-nowrap"
                     >
-                      Number of People
+                      {formItem.numOfPeople}
                     </FormLabel>
                     <FormControl>
                       <Input
@@ -153,7 +165,7 @@ export default function DataForm() {
                       htmlFor="visitingTime"
                       className="mr-5 text-xl md:text-3xl whitespace-nowrap"
                     >
-                      Visiting Time
+                      {formItem.time}
                     </FormLabel>
                     <Select
                       name="visitingTime"
@@ -197,7 +209,7 @@ export default function DataForm() {
           />
           <div className="flex justify-center mt-3">
             <Button type="submit" variant="outline" size="sm">
-              Submit
+              {buttonText.submit}
             </Button>
           </div>
 
@@ -207,10 +219,8 @@ export default function DataForm() {
               className="sm:max-w-[425px]"
             >
               <DialogHeader>
-                <DialogTitle>Your Input</DialogTitle>
-                <DialogDescription>
-                  Below is the information you have entered. Is this correct?
-                </DialogDescription>
+                <DialogTitle>{confirm.title}</DialogTitle>
+                <DialogDescription>{confirm.message}</DialogDescription>
               </DialogHeader>
               <button
                 className="absolute right-4 top-4 bg-transparent border-none p-1"
@@ -225,20 +235,20 @@ export default function DataForm() {
               </button>
               <div className="container">
                 <div className="flex mb-2">
-                  <p className="font-bold mr-3">Room Number</p>
+                  <p className="font-bold mr-3">{formItem.numOfPeople}</p>
                   <p>{roomNumber}</p>
                 </div>
                 <div className="flex mb-2">
-                  <p className="font-bold mr-3">Number of People</p>
+                  <p className="font-bold mr-3">{formItem.roomNum}</p>
                   <p>{numberOfPeople}</p>
                 </div>
                 <div className="flex mb-2">
-                  <p className="font-bold mr-3">Visiting Time</p>
+                  <p className="font-bold mr-3">{formItem.time}</p>
                   <p>{time}</p>
                 </div>
               </div>
               <DialogFooter>
-                <Button onClick={onDialogSubmit}>Save changes</Button>
+                <Button onClick={onDialogSubmit}>{buttonText.save}</Button>
               </DialogFooter>
             </DialogContent>
           </Dialog>

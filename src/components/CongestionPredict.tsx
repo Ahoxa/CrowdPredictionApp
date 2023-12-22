@@ -4,9 +4,6 @@ import { Progress } from "@/components/ui/progress";
 function CongestionPredict() {
   return (
     <div className="container">
-      <p className="text-center text-3xl font-medium my-5">
-        Congestion Prediction
-      </p>
       <div className="flex items-center w-[60vw] mb-5">
         <h2 className="whitespace-nowrap mr-5">07:00 ~ 07:30</h2>
         <Progress value={50} />

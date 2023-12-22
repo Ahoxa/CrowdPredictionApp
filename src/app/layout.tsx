@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import LangSelector from "@/components/LangSelector";
 import Instructions from "@/components/Instructions";
 
+import { LanguageProvider } from "@/hooks/LanguageContext";
+
 const alegreya = Alegreya({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,12 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={alegreya.className}>
-        <Navbar />
-        <LangSelector />
-        <Instructions />
-        {children}
-      </body>
+      <LanguageProvider>
+        <body className={alegreya.className}>
+          <Navbar />
+          <LangSelector />
+          <Instructions />
+          {children}
+        </body>
+      </LanguageProvider>
     </html>
   );
 }
